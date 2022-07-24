@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: list-item;
+        float: left;
+        margin-right: 3vw;
+        padding: 0;
+        cursor: pointer;
+        font-size: 1.5vw;
+    }
+
+    li:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        /* margin-left: 10px; */
+        width: 100%;
+        height: 3rem;
+        border: solid rgb(136, 255, 0) 1px;
+        color: blue;
+    }
+
+    #dic {
+        background-color:aqua;
+    }
+
+    #form {
+        float: right;
+    }
+
+    /* body{
+    width: 100%;
+    background-color: rgb(67, 64, 224);
+} */
+    .img-flower {
+        width: 100.45vw;
+        height: 103vh;
+    }
+
+    #root {
+        width: 100vw;
+        height: 100vh;
+        margin-left: -2vw;
+        margin-top: -2vh;
+    }
+
+    body {
+        background: url("./f58033a1-45c8-4cf4-af75-341cb9d2fb2a.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 124vh;
+        width: 100%;
+    }
+
+    .sign-up-form {
+        width: 300px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+        background: black;
+        padding: 0.5vh 1vw 1vh 1vh;
+        margin: -80vh auto 0;
+        text-align: center;
+        padding-left: 15px;
+        border-radius: 20px;
+    }
+
+    .sign-up-form h1 {
+        color: rgb(43, 122, 226);
+        margin-bottom: 30px;
+    }
+
+    .input-box {
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 0;
+        width: 93%;
+        border: 1px solid #999;
+        outline: none;
+        cursor: text;
+    }
+
+    button {
+        color: cornflowerblue;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 15px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(43, 122, 226);
+        color: #fff;
+    }
+
+    .google-btn {
+        background-color: rgb(43, 122, 226);
+    }
+
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+    p{
+        color: #fff;
+    }
+</style>
+
+<body>
+    <div id="root">
+        <div class="container" id="dic">
+            <ul>
+                <!-- <li><a href="./index.html">logo</a></li> -->
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contactUs.html">Contact Us</a></li>
+                <div id="form">
+                    <li><a href="./register.html" title="Registeration">SignUp</a></li>
+                    <li><a href="./signIn.html" title="Login">SignIn</a></li>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+    <div class="sign-up-form">
+        <form action="">
+            <h1>Contact with us</h1>
+            <input type="Name" class="input-box" placeholder="Your Name">
+            <input type="Email" class="input-box" placeholder="Your Email">
+            <input type="text" class="input-box" placeholder="Your Mobile Number">
+            <input type="text" class="input-box" placeholder="Address">
+            <p><span><input type="checkbox"></span>I agree with the <a id="t_n_c">terms of conditions</a></p>
+            <button type="submit">Sent</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
